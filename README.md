@@ -1,4 +1,4 @@
-## fail2ban
+## ansible-fail2ban
 
 [![Build Status](https://travis-ci.org/nbigot/ansible-fail2ban.svg?branch=master)](https://travis-ci.org/nbigot/ansible-fail2ban) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-fail2ban-blue.svg)](https://galaxy.ansible.com/nbigot/fail2ban)
 
