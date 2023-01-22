@@ -89,14 +89,7 @@ None
         findtime: 120
 ```
 
-#### License
+#### Information/credits for the original author(s) of this project:
 
-MIT
-
-#### Author Information
-
-Nicolas Bigot (based on work of Mischa ter Smitten [tersmitten](https://github.com/Oefenweb/ansible-fail2ban) (based on work of [ANXS](https://github.com/ANXS)))
-
-#### Feedback, bug-reports, requests, ...
-
-Are [welcome](https://github.com/nbigot/ansible-fail2ban/issues)!
+Based on work of Mischa ter Smitten [tersmitten](https://github.com/Oefenweb/ansible-fail2ban)
+(based on work of [ANXS](https://github.com/ANXS)))
