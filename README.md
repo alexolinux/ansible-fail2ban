@@ -52,7 +52,7 @@ None
 ---
 - hosts: all
   roles:
-    - fail2ban
+    - ansible-fail2ban
 ```
 
 ##### Enable sshd filter (with non-default settings)
