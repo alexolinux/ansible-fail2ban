@@ -61,7 +61,7 @@ None
 ---
 - hosts: all
   roles:
-    - fail2ban
+    - ansible-fail2ban
   vars:
     fail2ban_services:
       # In Ubuntu 16.04 this is sshd
@@ -77,7 +77,7 @@ None
 ---
 - hosts: all
   roles:
-    - fail2ban
+    - ansible-fail2ban
   vars:
     fail2ban_filterd_path: ../../../files/fail2ban/etc/fail2ban/filter.d/
     fail2ban_services:
