@@ -1,7 +1,5 @@
 ## ansible-fail2ban
 
-[![Build Status](https://travis-ci.org/nbigot/ansible-fail2ban.svg?branch=master)](https://travis-ci.org/nbigot/ansible-fail2ban) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-fail2ban-blue.svg)](https://galaxy.ansible.com/nbigot/fail2ban)
-
 Set up fail2ban in RHEL / Centos and Ubuntu systems.
 
 #### Requirements
@@ -59,16 +57,17 @@ None
 
 ```yaml
 ---
-- hosts: all
+- hosts: ec2-buddy
+  become: yes
   roles:
-    - ansible-fail2ban
+     - ansible-fail2ban
   vars:
     fail2ban_services:
-      # In Ubuntu 16.04 this is sshd
-      - name: ssh
+      # Check if is Ubuntu to use ssh instead of sshd service name.
+      - name: sshd
         port: 2222
         maxretry: 5
-        bantime: -1
+    fail2ban_ignoreips: [127.0.0.1/8 172.31.0.0/16]
 ```
 
 ##### Add custom filters (from outside the role)
